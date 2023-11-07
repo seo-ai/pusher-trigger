@@ -1,0 +1,29 @@
+name: "Pusher trigger"
+description: "Trigger pusher event"
+
+inputs:
+  app-id:
+    description: "Pusher app ID"
+    required: true
+  app-key:
+    description: "Pusher app key"
+    required: true
+  app-secret:
+    description: "Pusher app secret"
+    required: true
+  app-cluster:
+    description: "Pusher app cluster"
+    required: true
+  channel:
+    description: "Pusher channel"
+    required: true
+  event:
+    description: "Event name"
+    required: true
+  message:
+    description: "Stringified JSON to pass as event message"
+    required: false
+
+runs:
+  using: "node20"
+  main: "index.js"
