@@ -1,0 +1,19 @@
+{
+  "name": "pusher-trigger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farazatarodi/pusher-trigger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farazatarodi/pusher-trigger/issues"
+  },
+  "homepage": "https://github.com/farazatarodi/pusher-trigger#readme",
+  "dependencies": {
+  }
+}
