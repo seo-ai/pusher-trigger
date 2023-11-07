@@ -21,4 +21,4 @@ jobs:
           app-cluster: eu
           channel: global
           event: push-trigger-event
-          message: "{text:'Pushed from CI ${{github.sha}}'}"
+          message: '{"text":"${{github.sha}}"}'
