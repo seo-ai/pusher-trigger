@@ -15,9 +15,9 @@ jobs:
       - name: Pusher trigger test
         uses: ./
         with:
-          app-id: $PUSHER_APP_ID
-          app-key: $PUSHER_APP_KEY
-          app-secret: $PUSHER_APP_SECRET
+          app-id: ${{env.PUSHER_APP_ID}}
+          app-key: ${{env.PUSHER_APP_KEY}}
+          app-secret: ${{secrets.PUSHER_APP_SECRET}}
           app-cluster: eu
           channel: global
           event: push-trigger-event
