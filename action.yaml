@@ -1,5 +1,7 @@
 name: "Pusher trigger"
-description: "Trigger pusher event"
+description: "Trigger a Pusher event"
+icon: bell
+color: purple
 
 inputs:
   app-id:
