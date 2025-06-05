@@ -1,9 +1,9 @@
-name: "Pusher trigger"
+name: "SEO.ai trigger pusher event"
 description: "Trigger a Pusher event"
 
 branding:
   icon: bell
-  color: purple
+  color: green
 
 inputs:
   app-id:

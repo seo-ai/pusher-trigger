@@ -14,10 +14,15 @@ try {
     core.getInput("channel"),
     core.getInput("event"),
     JSON.parse(core.getInput("message"))
-  );
+  ).then(
+      function() {
+        const payload = JSON.stringify(github.context.payload, undefined, 2);
+        console.log(`The event payload: ${payload}`);
+      }
+  ).catch(function(error) {
+    core.setFailed(error.message);
+  })
 
-  const payload = JSON.stringify(github.context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
